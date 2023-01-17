@@ -13,9 +13,9 @@ output_layers = [layer_names[i - 1] for i in net.getUnconnectedOutLayers()]
 colors = np.random.uniform(0, 255, size=(len(classes), 3))
 
 # Loading image
-file = "src/images/pedestrian_and_car.jpg"
+file = "src/images/animals.jpg"
 img = cv.imread(file)
-rate = 0.8
+rate = 0.7
 img = cv.resize(img, None, fx=rate, fy=rate)
 height, width, channels = img.shape
 
